@@ -1,0 +1,5 @@
+$colour-block: hsl(0,0%,95%);
+$colour-primary: hsl(267,66%,60%);
+$colour-secondary: hsl(317,100%,74%);
+$colour-tertiaire: hsl(165,56%,74%);
+$colour-block-darken: darken($color: hsl(0,0%,95%), $amount: 5%)

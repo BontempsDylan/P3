@@ -1,0 +1,19 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./CSS/scss/main.scss:./CSS/public/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BontempsDylan/P3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BontempsDylan/P3/issues"
+  },
+  "homepage": "https://github.com/BontempsDylan/P3#readme"
+}
