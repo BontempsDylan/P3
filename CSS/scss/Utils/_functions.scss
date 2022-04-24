@@ -1,0 +1,5 @@
+@function darkun-shift($colour){
+    @if (lightness($colour) < 25% ) {
+        $colour:darken($colour, 20%);   
+    }
+}
