@@ -20,15 +20,15 @@
         &__formulaire{
             width: 100%;
             display: flex;
-            border-top: 3px solid darken($color: hsl(0,0%,95%), $amount: 12%);
+            border-top: 3px solid $colour-block-12;
             &__search{
-                background: $colour-block-darken;
+                background: $colour-block-5;
                 width: 66%;
                 height: 40px;
                 margin: 0px;
                 padding-left: 9px;
                 border-style: solid;
-                border-color: $colour-block-darken;
+                border-color: $colour-block-5;
                 &::placeholder{
                     color: black;
                     font-family: 'Roboto';
@@ -50,7 +50,7 @@
             align-items: flex-end;
             padding-bottom: 15px;
             margin: 0px;
-            width: 80%;
+            width: 60%;
             height: 100px;
             & h2{
                 text-align: center;
@@ -58,7 +58,7 @@
                 margin: 0px;
                 font-family: 'Roboto';
                 font-weight: 600; 
-                font-size: 22px;
+                font-size: 18px;
             }
         }
         &__p{
@@ -73,7 +73,7 @@
                 margin: 0px;
                 font-family: 'Roboto';
                 font-weight: 300; 
-                font-size: 17px; 
+                font-size: 14px; 
             }  
         }
     }
@@ -93,7 +93,7 @@
             font-family: 'Roboto';
             font-size: 12px;
             font-weight: 300;
-            box-shadow: 5px 5px 8px -3px darken($color: hsl(0,0%,95%), $amount: 30%),
+            box-shadow: 5px 5px 8px -3px $colour-block-30,
                         15px 33px 45px -20px $colour-secondary inset;
 
         }
@@ -105,7 +105,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    background: $colour-block-darken;
+    background: $colour-block-5;
     width: 34%;
     height: 40px;
     margin: 0px;
