@@ -191,4 +191,129 @@ h1 {
   width: 30px;
 }
 
+.section {
+  width: 100%;
+  height: 1090px;
+  background: hsl(0deg, 0%, 95%);
+}
+.section__title {
+  padding-left: 15px;
+  padding-top: 25px;
+  height: 80px;
+}
+.section__title h2 {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 600;
+}
+.section__block {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.section__block a {
+  color: black;
+}
+.section__block a:link {
+  text-decoration: none;
+}
+.section__block__card {
+  width: 300px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: white;
+  box-shadow: 2px 2px 10px #d4d4d4;
+  border-radius: 12px 12px 12px 12px;
+}
+.section__block__card__image {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+.section__block__card__image__new {
+  background: hsl(165deg, 56%, 74%);
+  float: right;
+}
+.section__block__card__image img {
+  width: 104%;
+  position: absolute;
+  top: -45px;
+  left: -5px;
+}
+.section__block__card__block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 75px;
+  padding-left: 10px;
+  border-radius: 0px 0px 12px 12px;
+}
+.section__block__card__block__title {
+  width: 100%;
+  height: 23px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 14px;
+}
+.section__block__card__block__p {
+  width: 100%;
+  height: 35px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.footer {
+  width: 100%;
+  height: 180px;
+  background: #404040;
+}
+.footer__title {
+  height: 40px;
+  padding-left: 15px;
+}
+.footer__title h1 {
+  font-size: 17px;
+  font-weight: 100;
+  color: white;
+}
+.footer__block_lien {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+.footer__block_lien__puce {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+  height: 25px;
+  color: white;
+}
+.footer__block_lien__puce--modif {
+  width: 140px;
+}
+.footer__block_lien__puce p {
+  font-family: "roboto";
+  font-weight: 400;
+  font-size: 14px;
+}
+.footer__block_lien__nopuce {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+.footer__block_lien__nopuce p {
+  color: white;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=main.css.map */

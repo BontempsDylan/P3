@@ -1,0 +1,46 @@
+.footer{
+    width: 100%;
+    height: 180px;
+    background: $colour-footer;
+    &__title{
+        height: 40px;
+        padding-left: 15px;
+        & h1{
+            font-size: 17px;
+            font-weight: 100;
+            color: white;
+        }
+    }
+    &__block_lien{
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        &__puce{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 170px;
+            height: 25px;
+            color: white;
+            &--modif{
+                width: 140px;
+            }
+            & p{
+                font-family: 'roboto';
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+        &__nopuce{
+            display: flex;
+            align-items: center;
+            height: 25px;
+            & p{
+                color: white;
+                font-family: 'roboto';
+                font-weight: 300;
+                font-size: 16px;
+            }
+        }
+    }
+}
