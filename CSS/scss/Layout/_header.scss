@@ -125,3 +125,24 @@
 .fa-arrow-left{
    width: 80px;
 }
+
+@media screen and (min-width:761px) and (max-width: 992px){
+    .header{
+        &__block{
+            &__formulaire{
+                &__search{
+                    width: 60%;
+                    &::placeholder{
+                       font-size: 18px;
+                    }   
+                }       
+            } 
+        }                                    
+    }
+    .fa-arrow-left{
+        width: 300px;
+    }
+    .fa-map-marker-alt{
+        width: 40%;
+    }
+}
