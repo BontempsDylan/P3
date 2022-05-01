@@ -1,5 +1,0 @@
-@mixin darken($colour: $colour-block) {
-    @if (lightness($colour) > 80%) {
-        $colour: darken($colour, 30%)
-    }
-}

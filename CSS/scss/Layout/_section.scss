@@ -249,3 +249,11 @@
         }
     }
 }
+
+@media screen and (min-width:761px) and (max-width: 992px){
+    .section{
+        &__title{
+            padding-left: 50px;
+        }
+    }
+}
