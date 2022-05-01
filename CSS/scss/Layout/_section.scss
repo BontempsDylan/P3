@@ -252,48 +252,8 @@
 
 @media screen and (min-width:761px) and (max-width: 992px){
     .section{
-        &--secondaire{
-            height: 1370px;
-            &--modif{
-                height: 1490px;
-            }
-        }
         &__title{
             padding-left: 50px;
-        }
-        &__block{
-            &--secondaire{
-            height: 1410px;
-            &--modif{
-                height: 1530px;
-            }
-            }
-            &__card{
-                &--secondaire{
-                height: 1410px;
-                &--modif{
-                    height: 1530px;
-                }
-                }
-                &__image{
-                    &--secondaire{
-                        height: 500px;
-                    }
-                }
-                &__block{
-                    &__title{
-                        &--secondaire{
-                            padding-left: 150px;
-                            padding-right: 200px;
-                        }
-                    }
-                }
-                &__choix{
-                    &__title{
-                        padding-left: 150px;
-                    }
-                }
-            }
         }
     }
 }
