@@ -157,9 +157,12 @@
             } 
         }   
     }
+    .logo{
+        position: relative;
+        left: 25%;
+    }
     .fa-arrow-left{
         padding-left: 50px;
-        width: 730px;
     }
     .fa-map-marker-alt{
         width: 46%;
