@@ -126,8 +126,13 @@
    width: 80px;
 }
 
-@media screen and (min-width:761px) and (max-width: 992px){
+@media screen and (min-width:761px){
     .header{
+        &__title{
+            &--secondaire{
+
+            }
+        }
         &__block{
             &__formulaire{
                 &__search{
@@ -139,7 +144,29 @@
             } 
         }                                    
     }
+    .fa-arrow-left{
+        width: 290px;
+    }
     .fa-map-marker-alt{
         width: 40%;
+    }
+}
+
+@media screen and (min-width:982px){
+    .header{
+        &__block{
+            &__formulaire{
+                &__search{
+                    width: 54%;   
+                }       
+            } 
+        }   
+    }
+    .fa-arrow-left{
+        padding-left: 50px;
+        width: 730px;
+    }
+    .fa-map-marker-alt{
+        width: 46%;
     }
 }
