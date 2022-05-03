@@ -103,8 +103,18 @@
             font-weight: 300;
             box-shadow: 5px 5px 8px -3px $colour-block-30,
                         15px 33px 45px -20px $colour-secondary inset;
+            &:hover{
+                background: lighten($colour-primary,10);
+                box-shadow: 5px 5px 8px 2px $colour-block-30,
+                            15px 33px 45px -20px $colour-secondary inset;
+            }        
             &--secondaire{
                 width: 140px;
+                &:hover{
+                    background: lighten($colour-primary,10);
+                    box-shadow: 5px 5px 8px 2px $colour-block-30,
+                                15px 33px 45px -20px $colour-secondary inset;
+                }    
             }
         }
     }      

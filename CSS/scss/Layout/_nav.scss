@@ -27,7 +27,14 @@
             box-shadow: 5px 5px 8px $colour-block-12;
             & i{
                 color: darken($color: hsl(0,0%,95%), $amount: 50%);
+                &:hover{
+                    color: $colour-primary;
+                }
             }
+            &:hover{
+                background: lighten($colour-primary,35);
+                box-shadow: 5px 5px 8px 2px $colour-block-30,
+            }    
             &__box{
                 padding-right: 10px;
                 position: relative;

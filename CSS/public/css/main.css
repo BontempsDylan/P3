@@ -124,8 +124,16 @@ h1 {
   font-weight: 300;
   box-shadow: 5px 5px 8px -3px #a6a6a6, 15px 33px 45px -20px hsl(317deg, 100%, 74%) inset;
 }
+.header__block__btn__btn:hover {
+  background: #ad80e5;
+  box-shadow: 5px 5px 8px 2px #a6a6a6, 15px 33px 45px -20px hsl(317deg, 100%, 74%) inset;
+}
 .header__block__btn__btn--secondaire {
   width: 140px;
+}
+.header__block__btn__btn--secondaire:hover {
+  background: #ad80e5;
+  box-shadow: 5px 5px 8px 2px #a6a6a6, 15px 33px 45px -20px hsl(317deg, 100%, 74%) inset;
 }
 
 .fa-map-marker-alt {
@@ -209,6 +217,13 @@ h1 {
 }
 .nav__block__btn i {
   color: #737373;
+}
+.nav__block__btn i:hover {
+  color: hsl(267deg, 66%, 60%);
+}
+.nav__block__btn:hover {
+  background: #f1eafb;
+  box-shadow: 5px 5px 8px 2px #a6a6a6;
 }
 .nav__block__btn__box {
   padding-right: 10px;
