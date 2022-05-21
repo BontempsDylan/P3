@@ -53,7 +53,7 @@
             text-decoration: none;
         }
         &__card{
-            width: 298px;
+            width: 297px;
             height: 230px;
             display: flex;
             flex-direction: column;
@@ -145,9 +145,6 @@
                         height: 20px;
                         margin: 0px;
                     }                    
-                    & i{
-                        color: darken($color: hsl(0,0%,95%), $amount: 50%);
-                    }
                 }
                 & p{
                     display: flex;
@@ -185,7 +182,7 @@
                     &--modif{
                         height: 280px;
                     }                        
-                    &__select{
+                    &__select {
                         display: flex;
                         justify-content: space-between;
                         background: white;   
@@ -193,48 +190,59 @@
                         height: 60px;
                         border-radius: 15px 15px 15px 15px;
                         box-shadow: 2px 2px 15px $colour-block-12;
-                        padding-left: 10px;
-                        padding-right: 20px;
                         font-family: 'roboto';
                         overflow: hidden; 
                         cursor: pointer;
-                        text-overflow: ellipsis;                         
-                        &:hover{
-                            padding-right: 0px;
-                            .back{
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                position: relative;
-                                left: 0px;
-                                background: $colour-tertiaire;  
-                                border-radius: 0px 15px 15px 0px;
-                                width: 60px;
-                                animation: deplacement normal 500ms linear;
-                            }
-                            .fa-check-circle{
-                               display: flex;
-                               align-items: center;
-                               justify-content: center;
-                               color: white;
-                               width: 100%;
-                               animation: rotation 500ms 300ms linear;
-                           }
-                           & h3{
-                                animation: taille_h3 500ms both;
-                           }
-                           & p{
-                                animation: taille_p 500ms both;
-                           }
-                           & h4{
-                                animation: taille_h4 500ms 300ms both;
-                           }
-                        }
-                        &__place{
+                        text-overflow: ellipsis;   
+                        &__place {
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             width: 300px;
+                            padding: 10px;
+                            transition: width 1s ease-in-out;
+                        }  
+                        & h3{
+                            font-size: 16px;
+                            display: flex;
+                            align-items: center;
+                            height: 20px;
+                            margin: 0px;
+                            white-space: nowrap;
+                            width: 85%;
+                            transition: width 1s ease-in-out;
+                            & span {
+                                text-overflow: ellipsis;
+                                overflow: hidden;   
+                            }
+                        }  
+                        &__accompagnement{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            height: 20px;                                                                                     
+                            & p{
+                                font-size: 12.5px;
+                                font-weight: 400;                              
+                                white-space: nowrap;
+                                width: 85%;
+                                transition: width 1s ease-in-out;
+                                & span {
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;   
+                                }
+                            }   
+                        }            
+                        &:hover{
+                            .back{
+                                width: 60px;
+                            }
+                            .fa-check-circle{
+                               animation: rotation 500ms 300ms linear;
+                           }
+                           .section__block__card__choix__block__select__place {
+                               width: 240px;
+                           }           
                         }
                         & h3{
                             font-size: 16px;
@@ -246,20 +254,6 @@
                             text-overflow: ellipsis;
                             overflow: hidden; 
                         }
-                        &__accompagnement{
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            height: 20px;                                                                                     
-                            & p{
-                                font-size: 12.5px;
-                                font-weight: 400;                              
-                                white-space: nowrap;
-                                text-overflow: ellipsis;
-                                overflow: hidden;                        
-                            }                          
-                        }
-                        
                     }
                 } 
                 
@@ -267,19 +261,50 @@
         }
     }
 }
-.back{
-    position: relative;
-    left: 20px;
+
+.back {
+    width: 0px;
+    transition: width 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $colour-tertiaire;  
+    border-radius: 0px 15px 15px 0px;
 }
 .fa-check-circle{
-    display: none;    
+    color: white;  
 }
+#wrapper{
+    position:relative;
+    height: 25px;
+    cursor: pointer;
+}
+#color-icon, #base-icon {
+    position: absolute;
+    top: 6px;
+    right: 1px;
+    font-size: 20px;
+    transition: transform 0.8s;
+}
+#color-icon {
+    background-image: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    background-clip: text; 
+    -webkit-background-clip: text;
+    color:transparent;
+    transform: scale(0);
+}
+#wrapper:hover .far{
+    transform: scale(0);
+}
+#wrapper:hover .far + i {
+    transform: scale(1);
+}
+
 
 @media screen and (min-width:667px){
     .section{
         & h2{
-            justify-content: flex-start;
-            margin-left: 150px;
+            justify-content: center;
             padding: 0px;
         }
         &--secondaire{
@@ -322,9 +347,13 @@
 }
 @media screen and (min-width:982px){
     .section{
-        height: 650px;
+        height:450px;
         width: 100%;
         margin: 0px;
+        @media screen and (max-width:1416px) {
+            height: 600px;
+        }
+        & h2{}
         &--secondaire{
             height: 1700px;
             &--modif{
@@ -335,15 +364,12 @@
             padding-left: 30%;
             padding-right: 35%;
         }
-        & h2{
-            justify-content: flex-start;
-            margin-left: 35%;
-        }
         &__block{                        
-            flex-wrap: wrap;                       
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;                       
             margin: 0px;
-            height: 500px;
-            width: 300px;
+            height: 300px;
             &--secondaire{
                 width: 100%;
                 height: 1740px;
@@ -351,6 +377,11 @@
                 &--modif{
                     height: 1870px;
                 }
+            }
+            & a{
+                display: flex;
+                justify-content: center;
+                width: 350px;
             }
             &__card{
                 &--secondaire{
@@ -377,6 +408,12 @@
                 &__choix{
                     &__title{
                         padding-left: 40%;
+                    }
+                    & h2{
+                        margin-left: 30%;
+                        @media screen and (min-width:1450px) {
+                            margin-left: 35%;
+                        }
                     }
                 }
             }

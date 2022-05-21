@@ -154,6 +154,11 @@
 }
 
 @media screen and (min-width:982px){
+    .header{
+        &__title{
+            background: white;
+        }
+    }
     .logo{
         position: relative;
         left: 25%;

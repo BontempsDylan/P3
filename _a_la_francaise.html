@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- TODO toutes les pages de menu ne sont pas dans le dossier SCSS -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -15,23 +16,34 @@
                 <div class="logo"><img src="/CSS/public/image/logo/ohmyfood.png"></div>
             </div>
         </header>
-        <section class="section section--secondaire">                                           
+        <section class="section section--secondaire">                                   
             <div class="section__block__card__image section__block__card__image--secondaire">
-                <img src="/CSS/public/image/photos restaurants/4_louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                <!-- TODO entre 981px et 1123px de largeur pour l'écran, set la width de l'image à 120% -->
+                <img src="/CSS/public/image/photos restaurants/3_toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">                
             </div> 
             <div class="section__title">
-                <h1>Le délice des sens</h1>
-                <i class="far fa-heart"></i>
+                <h1>À la française</h1>
+                <div id="wrapper">
+                    <i class="far fa-heart" id="base-icon"></i>
+                    <i class="fas fa-heart" id="color-icon"></i>
+                </div>
+
+                <!-- TODO à appliquer en desktop pour la partie style -->
+                <!-- <div style="display: flex; align-items:center; justify-content: space-around; width: 100%; padding-top:50px">
+                    <h1>À la française</h1>
+                    <i class="far fa-heart"></i>
+                </div> -->
             </div>
-            <div class="section__block__card__block section__block__card__block--secondaire">                                 
+
+            <div class="section__block__card__block section__block__card__block--secondaire">                          
                 <div class="section__block__card__choix">
                     <h2>ENTRÉES</h2>
                     <div class="section__block__card__choix__block">
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                                <h3>Tartare de thon</h3>
+                                <h3><span>Tartare de poulpe acidulé</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>Assaisonné au yuzu</p>
+                                    <p><span>zestes d'orange</span></p>
                                     <h4>25€</h4>
                                 </div>
                             </div>
@@ -39,9 +51,9 @@
                         </div>
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                                <h3>Bouchée de  homard croustillant</h3>
+                                <h3><span>Velouté de légumes d'antan</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>Et sa farandole de petits légumes</p>
+                                    <p><span>Carotte, panais, topinambour</span></p>
                                     <h4>35€</h4>
                                 </div>
                             </div>
@@ -49,9 +61,9 @@
                         </div>
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                                <h3>Velouté de cèpes</h3>
+                                <h3><span>Soupe à l'oignon</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>Aux truffes</p>
+                                    <p><span>Revisitée</span></p>
                                     <h4>20€</h4>
                                 </div>
                             </div>
@@ -64,9 +76,9 @@
                     <div class="section__block__card__choix__block">
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                                <h3>Poulet rôti aux  herbes de Provence</h3>
+                                <h3><span>Coquilles Saint-Jacques</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>Et sa crème de truffe</p>
+                                    <p><span>Accompagnées d'une purée de panais</span></p>
                                     <h4>40€</h4>
                                 </div>
                             </div>
@@ -74,9 +86,9 @@
                         </div>
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                                <h3>Langouste rôtie</h3>
+                                <h3><span>Magret de canard</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>Et ses légumes de saison</p>
+                                    <p><span>Et parmentier de pommes de terre</span></p>
                                     <h4>35€</h4>
                                 </div>
                             </div>
@@ -84,9 +96,9 @@
                         </div>
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                                <h3>Côte de boeuf Angus</h3>
+                                <h3><span>Pigeonneau d’Ille-et-Vilaine</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>Et sa purée de panais</p>
+                                    <p><span>Sur son lit de gnocchis aux légumes</span></p>
                                     <h4>44€</h4>
                                 </div>
                             </div>
@@ -99,9 +111,9 @@
                     <div class="section__block__card__choix__block">
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                                <h3>Farandole de desserts</h3>
+                                <h3><span>Pétales de violettes glacés</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>Du chef</p>
+                                    <p><span>Et purée de noisettes</span></p>
                                     <h4>18€</h4>
                                 </div>
                             </div>
@@ -109,9 +121,9 @@
                         </div>
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                               <h3>Crème brulée</h3>
+                                <h3><span>Fondant au chocolat</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>Revisitée</p>
+                                    <p><span>Revisité</span></p>
                                     <h4>22€</h4>
                                 </div>
                             </div>
@@ -119,9 +131,9 @@
                         </div>
                         <div class="section__block__card__choix__block__select">
                             <div class="section__block__card__choix__block__select__place">
-                                <h3>Tiramisu</h3>
+                                <h3><span>Millefeuille croustillant</span></h3>
                                 <div class="section__block__card__choix__block__select__accompagnement">
-                                    <p>À la noisette</p>
+                                    <p><span>Myrtilles et pâte d’amande</span></p>
                                     <h4>23€</h4>
                                 </div>
                             </div>
@@ -130,7 +142,7 @@
                     </div>
                 </div>
                 <div class="header__block__btn header__block__btn--secondaire"><bouton class="header__block__btn__btn header__block__btn__btn--secondaire">Commander</bouton></div>
-            </div>                                    
+            </div>        
         </section>
         <footer class="footer">
             <div class="footer__title"><h1>ohmyfood</h1></div>
@@ -140,6 +152,6 @@
                 <div class="footer__block_lien__nopuce"><p>Mention légales</p></div>
                 <div class="footer__block_lien__nopuce"><p>Contact</p></div>               
             </div>
-        </footer>       
+        </footer>    
     </body>
 </html>

@@ -11,6 +11,7 @@ html, body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    animation: cat 0ms 3s both;
 }
 .body--secondaire{
     background: $colour-block;
