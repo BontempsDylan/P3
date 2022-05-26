@@ -35,6 +35,9 @@
             display: flex;
             align-items: center;
             height: 25px;
+            & a{
+              text-decoration: none;  
+            }
             & p{
                 color: white;
                 font-family: 'roboto';

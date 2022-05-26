@@ -101,8 +101,9 @@
             font-weight: 300;
             box-shadow: 5px 5px 8px -3px $colour-block-30,
                         15px 33px 45px -20px $colour-secondary inset;
+            cursor: pointer;
             &:hover{
-                background: lighten($colour-primary,10);
+                background: lighten($colour-primary,5);
                 box-shadow: 5px 5px 8px 2px $colour-block-30,
                             15px 33px 45px -20px $colour-secondary inset;
             }        
