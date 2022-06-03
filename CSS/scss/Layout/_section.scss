@@ -305,29 +305,29 @@
 .fa-check-circle{
     color: white;  
 }
-#wrapper{
+.wrapper{
     position:relative;
     height: 25px;
     cursor: pointer;
 }
-#color-icon, #base-icon {
+.color-icon, .base-icon {
     position: absolute;
     top: 6px;
     right: 1px;
     font-size: 20px;
     transition: transform 0.8s;
 }
-#color-icon {
+.color-icon {
     background-image: linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
     background-clip: text; 
     -webkit-background-clip: text;
     color:transparent;
     transform: scale(0);
 }
-#wrapper:hover .far{
+.wrapper:hover .far{
     transform: scale(0);
 }
-#wrapper:hover .far + i {
+.wrapper:hover .far + i {
     transform: scale(1);
 }
 
